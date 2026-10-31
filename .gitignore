@@ -1,0 +1,23 @@
+# Python
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Datasets and cached files
+data/
+*.npy
+
+# Model checkpoints (keep only selected ensemble checkpoints)
+models/*
+!models/fdhn_liar2_regularized/
+!models/frozen_roberta_fdhn_liar2/
+models/fdhn_liar2_regularized/*
+models/frozen_roberta_fdhn_liar2/*
+!models/fdhn_liar2_regularized/best_model.pt
+!models/frozen_roberta_fdhn_liar2/best_model.pt
+
+# Training checkpoints and temporary files
+results/checkpoints_*/
+backups/
